@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIRST CALCULATOR</title>
+</head>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px;
+
+}
+input[type="text"]{
+width:100%;
+font: size 24px;
+padding: 10px;
+text-align: right;
+margin-bottom: 10px;
+
+}
+.bottons button{
+    width: 60%;
+    height: 60px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointers;
+}
+</style>
+</head>
+<body>
+    
+<div class="calculator">
+<input type="text"id="display"disabeled>
+<div class="buttons">
+    
+    <button oneclick="cleardisplay()">C</button>
+    <button oneclick="appendvalue('/')">/</button>
+    <button oneclick="appendvalue('*')">*</button>
+    <button oneclick="appendvalue('-')">-</button>
+
+    <button oneclick="appendvalue('7')">7</button>
+    <button oneclick="appendvalue('8')">8</button>
+    <button oneclick="appendvalue('9')">9</button>
+    <button oneclick="appendvalue('+')">+</button>
+    <button oneclick="appendvalue('4')">4</button>
+    <button oneclick="appendvalue('5')">5</button>
+    <button oneclick="appendvalue('6')">6</button>
+    <button oneclick="calculator()">=</button>
+    <button oneclick="appendvalue('1')">1</button>
+    <button oneclick="appendvalue('2')">2</button>
+    <button oneclick="appendvalue('3')">3</button>
+    <button oneclick="appendvalue('0')">0</button>
+    
+</div>
+</div>
+  <script>
+    let display=document.getelementbyId('display');
+    function appendvalue(val){
+        dislay.value+=val;
+    }
+    function cleardisplay(){
+        display.value='';
+
+    }
+    function calculate(){
+        try{
+            display.value=eval(display.value);
+
+        }catch{
+            display.value='ERROR';
+
+        }
+    }
+  </script>
+  </body>
+
+
+    
+
+</html>

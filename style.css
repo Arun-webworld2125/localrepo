@@ -1,0 +1,73 @@
+ /* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Background style */
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  height: 100vh;
+  display:flex;
+  justify-content:right;
+  align-items:left;
+}
+
+
+.login-container {
+  background-color:#5548d9;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Header */
+ h2{
+  text-align:center;
+  margin-bottom:10px;
+  color:#333;
+  
+}
+
+
+/* Form styles */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+/* Button */
+.login-container button {
+  padding: 12px;
+  background-color:#6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #5548d9;
+}
+

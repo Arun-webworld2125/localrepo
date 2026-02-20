@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+vouid main()
+{
+int x,y,sum;
+clrscr();
+printf("enter the two number");
+scanf("%d",&x,&y);
+sum=x+y;
+printf("disply the addition result\n%d"sum);
+getch();
+}

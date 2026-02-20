@@ -1,0 +1,70 @@
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #74ebd5, #ACB6E5);
+        margin: 0;
+        padding: 0;
+        display:left;
+        justify-content:left;
+        align-items:left;
+        height: 100vh;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h2 {
+        text-align:center;
+        border-top-left-radius: 0cqi;
+        
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #444444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+        border-color: #5f9ea0;
+        outline: none;
+        box-shadow: 0 0 5px rgba(95, 158, 160, 0.5);
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background-color: #5f9ea0;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #468189;
+    }
+</style>
